@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a17644090.awesomemathgame.ChallengeActivity">
+
+    <TextView
+        android:id="@+id/textSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="109dp"
+        android:text="SETTING"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textDiffculty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="209dp"
+        android:text="DIFFICULTY"
+        android:textSize="36sp"
+        android:layout_below="@+id/textSetting"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnEasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:text="EASY"
+        android:layout_below="@+id/textDiffculty"
+        android:layout_alignStart="@+id/textDiffculty" />
+
+    <Button
+        android:id="@+id/btnMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnEasy"
+        android:layout_alignBottom="@+id/btnEasy"
+        android:layout_centerHorizontal="true"
+        android:text="Medium" />
+
+    <Button
+        android:id="@+id/btnHard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnMedium"
+        android:layout_alignBottom="@+id/btnMedium"
+        android:layout_marginStart="77dp"
+        android:layout_toEndOf="@+id/btnEasy"
+        android:text="hard" />
+</RelativeLayout>
