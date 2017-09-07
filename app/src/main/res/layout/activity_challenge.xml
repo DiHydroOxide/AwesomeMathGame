@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context="com.example.a17644090.awesomemathgame.ChallengeActivity">
 
     <TextView
@@ -14,46 +15,41 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="false"
         android:layout_marginTop="109dp"
-        android:text="SETTING"
         android:gravity="center"
-        android:textSize="30sp" />
-
-    <TextView
-        android:id="@+id/textDiffculty"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="179dp"
-        android:layout_marginTop="209dp"
-        android:text="DIFFICULTY"
-        android:textSize="36sp"
-        android:layout_below="@+id/textSetting"
-        android:layout_alignParentStart="true" />
+        android:text="CHALLENGE TASK !"
+        android:textColor="@android:color/holo_red_dark"
+        android:textCursorDrawable="@android:drawable/alert_dark_frame"
+        android:textSize="36sp" />
 
     <Button
         android:id="@+id/btnEasy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="67dp"
+        android:layout_alignBaseline="@+id/btnHard"
+        android:layout_alignBottom="@+id/btnHard"
+        android:layout_marginEnd="90dp"
+        android:layout_toStartOf="@+id/btnMedium"
         android:text="EASY"
-        android:layout_below="@+id/textDiffculty"
-        android:layout_alignStart="@+id/textDiffculty" />
+        android:textColor="@color/colorAccent" />
 
     <Button
         android:id="@+id/btnMedium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnEasy"
-        android:layout_alignBottom="@+id/btnEasy"
-        android:layout_centerHorizontal="true"
-        android:text="Medium" />
+        android:layout_alignBaseline="@+id/btnHard"
+        android:layout_alignBottom="@+id/btnHard"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="210dp"
+        android:text="Medium"
+        android:textColor="@color/colorAccent" />
 
     <Button
         android:id="@+id/btnHard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btnMedium"
-        android:layout_alignBottom="@+id/btnMedium"
-        android:layout_marginStart="77dp"
-        android:layout_toEndOf="@+id/btnEasy"
-        android:text="hard" />
+        android:layout_below="@+id/textSetting"
+        android:layout_marginTop="148dp"
+        android:layout_toStartOf="@+id/btnMedium"
+        android:text="hard"
+        android:textColor="@color/colorAccent" />
 </RelativeLayout>

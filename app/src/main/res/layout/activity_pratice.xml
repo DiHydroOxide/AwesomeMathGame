@@ -4,47 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:animationCache="false"
+    android:background="@color/colorPrimaryDark"
+    android:clickable="?attr/windowActionBar"
     tools:context="com.example.a17644090.awesomemathgame.PraticeActivity">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="?android:attr/windowTitleSize"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="110dp"
-        android:lines="4"
-        android:text="Select Level"
-        android:visibility="visible"
-        android:layout_alignParentEnd="true" />
+        android:gravity="center_horizontal"
+        android:lines="3"
+        android:shadowDx="5"
+        android:text="CHOOSE ONE"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark"
+
+
+        android:textDirection="5"
+        android:textScaleX="2"
+        android:textSize="36sp"
+        android:tooltipText="2"
+        android:visibility="visible" />
 
     <Button
         android:id="@+id/button6"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="167dp"
-        android:text="Math Skills" />
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="200dp"
+        android:text="Math Skills"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large"
+        android:theme="@style/AlertDialog.AppCompat" />
 
     <Button
         android:id="@+id/button7"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button6"
-        android:layout_below="@+id/button6"
-        android:layout_marginTop="22dp"
+        android:layout_alignBaseline="@+id/button6"
+        android:layout_alignBottom="@+id/button6"
+        android:layout_toEndOf="@+id/button6"
         android:text="Geometry" />
 
     <Button
         android:id="@+id/button8"
         style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button7"
-        android:layout_below="@+id/button7"
-        android:layout_marginTop="60dp"
+        android:layout_alignBaseline="@+id/button7"
+        android:layout_alignBottom="@+id/button7"
+        android:layout_toEndOf="@+id/button7"
         android:text="Measurement" />
 </RelativeLayout>

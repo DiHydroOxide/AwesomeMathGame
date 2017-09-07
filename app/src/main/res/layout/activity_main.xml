@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
     tools:context="com.example.a17644090.awesomemathgame.MainActivity">
 
     <TextView
@@ -27,9 +28,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Pratice"
+
         android:textColor="@color/colorPrimary"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
+        android:textCursorDrawable="@android:drawable/alert_dark_frame"
+        android:textSize="30sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="161dp" />
 
     <Button
         android:id="@+id/btnChallenge"
@@ -39,7 +44,10 @@
         android:layout_alignStart="@+id/btnPratice"
         android:layout_below="@+id/btnPratice"
         android:text="Challenge"
-        android:textColor="@color/colorAccent" />
+
+        android:textColor="@color/colorPrimary"
+        android:textCursorDrawable="@android:drawable/alert_dark_frame"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btnLeader"
@@ -49,28 +57,33 @@
         android:layout_alignStart="@+id/btnChallenge"
         android:layout_below="@+id/btnChallenge"
         android:text="Leader Boards"
-        android:textColor="@color/colorAccent"
-        android:textColorLink="@android:color/holo_purple" />
+        android:textColor="@color/colorPrimary"
+        android:textCursorDrawable="@android:drawable/alert_dark_frame"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btnSetting"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnShare"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="42dp"
+        android:layout_marginBottom="19dp"
         android:text="Setting"
-        android:textColor="@android:color/darker_gray" />
+        android:textColor="@color/colorPrimary"
+        android:textCursorDrawable="@android:drawable/alert_dark_frame"
+        android:textSize="30sp"
+        android:layout_above="@+id/btnShare"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/btnShare"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="31dp"
+        android:layout_marginBottom="121dp"
         android:text="Share"
-        android:textColor="@android:color/holo_blue_bright" />
+        android:textColor="@color/colorPrimary"
+        android:textCursorDrawable="@android:drawable/alert_dark_frame"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

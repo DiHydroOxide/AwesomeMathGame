@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AwesomeMathGame</string>
+    <string name="facebook_app_id">Mathappfacebookid</string>
 </resources>
