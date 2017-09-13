@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
     tools:context="com.example.a17644090.awesomemathgame.MainActivity">
 
     <TextView
@@ -15,36 +14,39 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="85dp"
         android:gravity="center_horizontal"
-        android:lines="2"
-        android:text="Awesome Math Game"
-        android:textColor="@color/colorAccent"
-        android:textColorHighlight="@color/colorAccent"
+        android:lines="1"
+        android:text="@string/app_name"
+        android:textColor="@android:color/background_dark"
+        android:textColorHighlight="@android:color/holo_blue_bright"
         android:textColorLink="?attr/editTextColor"
-        android:textSize="30sp" />
+        android:textSize="40sp" />
 
     <Button
         android:id="@+id/btnPratice"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Pratice"
+        android:layout_height="80dp"
 
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="130dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="@string/app_practice"
         android:textColor="@color/colorPrimary"
         android:textCursorDrawable="@android:drawable/alert_dark_frame"
-        android:textSize="30sp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="161dp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btnChallenge"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_alignStart="@+id/btnPratice"
         android:layout_below="@+id/btnPratice"
-        android:text="Challenge"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_marginTop="10dp"
 
+        android:text="@string/app_challenge"
         android:textColor="@color/colorPrimary"
         android:textCursorDrawable="@android:drawable/alert_dark_frame"
         android:textSize="30sp" />
@@ -53,11 +55,13 @@
         android:id="@+id/btnLeader"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="80dp"
         android:layout_alignStart="@+id/btnChallenge"
         android:layout_below="@+id/btnChallenge"
-        android:text="Leader Boards"
+        android:background="@android:color/holo_red_light"
+        android:text="@string/app_leaderboard"
         android:textColor="@color/colorPrimary"
+        android:layout_marginTop="10dp"
         android:textCursorDrawable="@android:drawable/alert_dark_frame"
         android:textSize="30sp" />
 
@@ -65,25 +69,28 @@
         android:id="@+id/btnSetting"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/btnShare"
+        android:layout_alignParentStart="true"
         android:layout_marginBottom="19dp"
-        android:text="Setting"
+        android:background="@android:color/holo_orange_light"
+        android:text="@string/app_settings"
         android:textColor="@color/colorPrimary"
         android:textCursorDrawable="@android:drawable/alert_dark_frame"
-        android:textSize="30sp"
-        android:layout_above="@+id/btnShare"
-        android:layout_alignParentStart="true" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btnShare"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
         android:layout_marginBottom="121dp"
-        android:text="Share"
+        android:background="@android:color/holo_green_light"
+        android:text="@string/app_share"
         android:textColor="@color/colorPrimary"
         android:textCursorDrawable="@android:drawable/alert_dark_frame"
-        android:textSize="30sp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:textSize="30sp" />
+
 </RelativeLayout>
